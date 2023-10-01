@@ -138,10 +138,10 @@ body {
   font-size: 14px;
   line-height: normal;
   margin-left: 40px;
+  fill: #858796;
 }
 
 .tasks-button {
-  fill: #858796;
   border: none;
   background-color: transparent;
   margin-left: 12px;
