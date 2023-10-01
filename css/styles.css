@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunitoregular.woff);
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url(../fonts/Nunitobold.woff);
+  font-weight: bold;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  flex-shrink: 0;
+  background: #F7F7F7;
+  padding: 17px;
+}
+
+.logo {
+  padding: 8px 0 27px 0;
+  text-align: center;
+  display: block;
+}
+
+.navigation {
+  color: #858796;
+  fill: #858796;
+}
+
+.navigation-item svg {
+  margin-right: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation-item a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 16px 20px;
+  color: inherit;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.navigation-item.active {
+  border-radius: 5px;
+  background: #467DF2;
+  color: #FFF;
+  fill: #FFF;
+}
+
+.navigation-item:hover {
+  border-radius: 5px;
+  background: #467DF2;
+  color: #FFF;
+  fill: #FFF;
+}
+
+.sidebar-contents {
+  max-width: 216px;
+  max-height: 178px;
+  padding: 13px 12px;
+}
+
+.sidebar-image {
+  float: left;
+  margin-right: 6px;
+}
+
+.sidebar-text {
+  color: #4F4E4F;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.sidebar-contents:hover {
+  border-radius: 5px;
+  border: 1px solid #467DF2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+
+.menu-item-open {
+  fill: #4F4E4F;
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-item-open:hover {
+  fill: #3D63D2;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #858796;
+  font-size: 14px;
+  line-height: normal;
+  margin-left: 40px;
+}
+
+.tasks-button {
+  border: none;
+  background-color: transparent;
+  margin-left: 12px;
+}
+
+.menu-items a:hover {
+  color: #3D63D2;
+  fill: #3D63D2;
+}
