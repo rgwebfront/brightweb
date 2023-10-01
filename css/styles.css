@@ -141,6 +141,7 @@ body {
 }
 
 .tasks-button {
+  fill: #858796;
   border: none;
   background-color: transparent;
   margin-left: 12px;
@@ -149,4 +150,59 @@ body {
 .menu-items a:hover {
   color: #3D63D2;
   fill: #3D63D2;
+}
+
+.header-tools {
+  display: flex;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+.header-search-button {
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid #E2E2E2;
+  border-right: none;
+  background: #EFEFF5;
+  cursor: pointer;
+  padding: 12px 10px 14px 20px;
+  display: flex;
+}
+
+.header-search-button svg {
+  background-color: transparent;
+  fill: #B3B3B3;
+}
+
+.header-search-button svg:hover {
+  fill: #467DF2;
+}
+
+.header-search-input {
+  border-radius: 0px 10px 10px 0px;
+  border: 1px solid #E2E2E2;
+  border-left: 0;
+  background: #EFEFF5;
+  outline: 0;
+  padding: 10px 10px 10px 0;
+  line-height: 145%;
+  font-size: 14px;
+}
+
+.header-search-input::placeholder {
+  color: #B3B3B3;
+}
+
+.header-statistics {
+  display: flex;
+  align-items: center;
+  fill: #858796;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.header-statistics:hover {
+  fill: #467DF2;
 }
