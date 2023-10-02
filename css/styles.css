@@ -156,7 +156,7 @@ body {
 }
 
 .tasks-button-result {
-  display: ;
+  display: none;
   position: absolute;
   border-radius: 10px;
   background: #FFF;
@@ -165,6 +165,7 @@ body {
   width: 150px;
   height: 113px;
   padding: 15px 30px 30px 20px;
+  z-index: 9999;
 }
 
 
@@ -178,7 +179,7 @@ body {
 
 }
 
-.menu-items:hover .tasks-button-result {
+.sub-menu-tasks:hover .tasks-button-result {
   display: block;
 }
 
