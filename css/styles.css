@@ -144,7 +144,9 @@ body {
 .tasks-button {
   border: none;
   background-color: transparent;
-  margin-left: 12px;
+  margin-left: 5px;
+  align-items: center;
+  cursor: pointer;
 }
 
 .menu-items a:hover {
@@ -189,6 +191,7 @@ body {
   padding: 10px 10px 10px 0;
   line-height: 145%;
   font-size: 14px;
+  width: 328px;
 }
 
 .header-search-input::placeholder {
@@ -205,4 +208,26 @@ body {
 
 .header-statistics:hover {
   fill: #467DF2;
+}
+
+.header-upload {
+  display: flex;
+  align-items: center;
+}
+
+.header-upload-button {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  border-radius: 10px;
+  background: #467DF2;
+  margin: 15px 0;
+  padding: 11px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-upload-button:hover {
+  background: #2F54A3;
 }
