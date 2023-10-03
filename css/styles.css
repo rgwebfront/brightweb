@@ -113,7 +113,6 @@ body {
 .menu {
   display: flex;
   position: relative;
-
 }
 
 .menu-item-open {
@@ -146,7 +145,6 @@ body {
   border: none;
   background-color: transparent;
   margin-left: 5px;
-
   cursor: pointer;
 }
 
@@ -156,14 +154,14 @@ body {
 }
 
 .tasks-button-result {
-  display: none;
+  opacity: 0;
+  transition: 2s;
   position: absolute;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 4px 20px 0px rgba(102, 102, 102, 0.15);
   top: 46px;
-  width: 150px;
-  height: 113px;
+  white-space: nowrap;
   padding: 15px 30px 30px 20px;
   z-index: 1;
 }
@@ -178,6 +176,8 @@ body {
 
 .sub-menu-tasks:hover .tasks-button-result {
   display: block;
+  opacity: 1;
+  transition: 1s;
 }
 
 .tasks-button-result-item:hover {
@@ -266,12 +266,83 @@ body {
   background: #EDEEF3;
 }
 
-.dashbord-title {
+.dashboard-title {
   color: #4F4E4F;
   font-size: 35px;
   font-weight: 800;
   line-height: normal;
 }
+
+
+.dashboard-video {
+  display: relative;
+  border-radius: 10px;
+  background: #FFF;
+  margin-top: 40px;
+  max-width: 350px;
+}
+
+.dashboard-video:hover {
+  box-shadow: 0px 4px 20px 0px rgba(102, 102, 102, 0.15);
+}
+
+.video-upload-status-button {
+  color: #4F4E4F;
+  font-size: 14px;
+  line-height: 14px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(247, 247, 247, 0.80);
+  position: absolute;
+  top: ;
+
+}
+
+.dashboard-video-description {
+  padding: 20px 27px;
+  background: #FFF;
+}
+
+.video-title {
+  color: #4F4E4F;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.video-upload-time {
+  color: #4F4E4F;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 8px;
+}
+
+.dashboard-video-menu ul {
+  margin-top: 18px;
+  list-style: none;
+  display: flex;
+
+}
+
+.dashboard-video-menu li {
+  margin-left: 45px;
+}
+
+.dashboard-video-menu li:first-child {
+  margin-left: 0;
+
+}
+
+
+
+
+
+.dashboard-video-menu {
+  fill: #858796;
+}
+
+
 
 
 
@@ -282,21 +353,18 @@ body {
 .technical-support {
   display: flex;
   align-items: center;
-  width: 186px;
-  height: 39px;
   transform: rotate(-90deg);
   flex-shrink: 0;
   border-radius: 10px 10px 0px 0px;
   background: #467DF2;
   padding: 10px 20px;
   position: absolute;
-  right: 0;
+  right: -73px;
   top: 327px;
 }
 
 .technical-support:hover {
-  width: 186px;
-  height: 49px;
+  right: -68px;
   transform: rotate(-90deg);
   flex-shrink: 0;
   border-radius: 10px 10px 0px 0px;
