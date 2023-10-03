@@ -107,6 +107,7 @@ body {
 
 .content {
   flex-grow: 1;
+  position: relative;
 }
 
 .menu {
@@ -114,7 +115,6 @@ body {
   position: relative;
 
 }
-
 
 .menu-item-open {
   fill: #4F4E4F;
@@ -165,10 +165,8 @@ body {
   width: 150px;
   height: 113px;
   padding: 15px 30px 30px 20px;
-  z-index: 9999;
+  z-index: 1;
 }
-
-
 
 .tasks-button-result-item {
   color: #686464;
@@ -176,7 +174,6 @@ body {
   line-height: normal;
   margin-top: 15px;
   cursor: pointer;
-
 }
 
 .sub-menu-tasks:hover .tasks-button-result {
@@ -186,8 +183,6 @@ body {
 .tasks-button-result-item:hover {
   color: #3D63D2;
 }
-
-
 
 .header-tools {
   display: flex;
@@ -276,5 +271,54 @@ body {
   font-size: 35px;
   font-weight: 800;
   line-height: normal;
+}
 
+
+
+
+
+
+
+.technical-support {
+  display: flex;
+  align-items: center;
+  width: 186px;
+  height: 39px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  border-radius: 10px 10px 0px 0px;
+  background: #467DF2;
+  padding: 10px 20px;
+  position: absolute;
+  right: 0;
+  top: 327px;
+}
+
+.technical-support:hover {
+  width: 186px;
+  height: 49px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  border-radius: 10px 10px 0px 0px;
+  background: #2F54A3;
+  padding: 10px 20px 19px 20px;
+}
+
+.technical-support-button {
+  display: flex;
+  fill: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  transform: rotate(90deg);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.technical-support-chat {
+  display: flex;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration: none;
 }
