@@ -273,9 +273,12 @@ body {
   line-height: normal;
 }
 
+.dashboard-videos {
+  position: relative;
+  margin-left: 35px;
+}
 
 .dashboard-video {
-  display: relative;
   border-radius: 10px;
   background: #FFF;
   margin-top: 40px;
@@ -294,9 +297,12 @@ body {
   border-radius: 5px;
   background: rgba(247, 247, 247, 0.80);
   position: absolute;
-  top: ;
-
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
 }
+
+
 
 .dashboard-video-description {
   padding: 20px 27px;
@@ -322,7 +328,11 @@ body {
   margin-top: 18px;
   list-style: none;
   display: flex;
+  fill: #858796;
+}
 
+.dashboard-video-menu a:hover {
+  fill: #467DF2;
 }
 
 .dashboard-video-menu li {
@@ -333,22 +343,6 @@ body {
   margin-left: 0;
 
 }
-
-
-
-
-
-.dashboard-video-menu {
-  fill: #858796;
-}
-
-
-
-
-
-
-
-
 
 .technical-support {
   display: flex;
