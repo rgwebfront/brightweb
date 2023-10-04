@@ -133,6 +133,7 @@ body {
 }
 
 .menu-items a {
+  display: flex;
   text-decoration: none;
   color: #858796;
   font-size: 14px;
@@ -142,6 +143,7 @@ body {
 }
 
 .tasks-button {
+
   border: none;
   background-color: transparent;
   margin-left: 5px;
@@ -262,8 +264,9 @@ body {
 }
 
 .container {
-  padding: 25px 37px 93px 40px;
+  padding: 25px 76px 93px 40px;
   background: #EDEEF3;
+  font-size: 0;
 }
 
 .dashboard-title {
@@ -273,16 +276,18 @@ body {
   line-height: normal;
 }
 
-.dashboard-videos {
-  position: relative;
-  margin-left: 35px;
-}
-
 .dashboard-video {
   border-radius: 10px;
   background: #FFF;
-  margin-top: 40px;
   max-width: 350px;
+  position: relative;
+  display: inline-block;
+  margin-left: 33px;
+  margin-top: 40px;
+}
+
+.dashboard-video:first-child {
+  margin-left: 0;
 }
 
 .dashboard-video:hover {
@@ -290,19 +295,30 @@ body {
 }
 
 .video-upload-status-button {
-  color: #4F4E4F;
   font-size: 14px;
   line-height: 14px;
   border: none;
   border-radius: 5px;
-  background: rgba(247, 247, 247, 0.80);
   position: absolute;
   top: 12px;
   left: 12px;
   padding: 4px 10px;
 }
 
+.video-upload-status-button.moderation {
+  color: #4F4E4F;
+  background: rgba(247, 247, 247, 0.80);
+}
 
+.video-upload-status-button.published {
+  color: #027900;
+  background-color: #C6E0C3;
+}
+
+.video-upload-status-button.error {
+  color: #DB0C0C;
+  background-color: #FFBCBCCC;
+}
 
 .dashboard-video-description {
   padding: 20px 27px;
@@ -328,6 +344,7 @@ body {
   margin-top: 18px;
   list-style: none;
   display: flex;
+  align-items: center;
   fill: #858796;
 }
 
@@ -341,7 +358,6 @@ body {
 
 .dashboard-video-menu li:first-child {
   margin-left: 0;
-
 }
 
 .technical-support {
@@ -354,7 +370,7 @@ body {
   padding: 10px 20px;
   position: absolute;
   right: -73px;
-  top: 327px;
+  top: 401px;
 }
 
 .technical-support:hover {
