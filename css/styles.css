@@ -324,6 +324,7 @@ body {
 .dashboard-video-description {
   padding: 20px 27px;
   background: #FFF;
+  border-radius: 10px;
 }
 
 .video-title {
