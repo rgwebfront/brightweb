@@ -143,7 +143,6 @@ body {
 }
 
 .tasks-button {
-
   border: none;
   background-color: transparent;
   margin-left: 5px;
@@ -233,12 +232,19 @@ body {
 .header-statistics {
   display: flex;
   align-items: center;
-  fill: #858796;
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.header-statistics:hover {
+.header-statistics a {
+  fill: #858796;
+}
+
+.header-statistics a:visited {
+  fill: #858796;
+}
+
+.header-statistics a:hover {
   fill: #467DF2;
 }
 
@@ -347,6 +353,13 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+}
+
+.dashboard-video-menu a {
+  fill: #858796;
+}
+
+.dashboard-video-menu a:visited {
   fill: #858796;
 }
 
