@@ -61,6 +61,7 @@ body {
   color: inherit;
   font-size: 14px;
   line-height: normal;
+  margin-bottom: 2px;
 }
 
 .navigation-item.active {
@@ -77,10 +78,19 @@ body {
   fill: #FFF;
 }
 
+.sidebar {
+  border-right: 1px solid #E2E2E2;
+}
+
 .sidebar-contents {
   max-width: 216px;
   max-height: 178px;
   padding: 13px 12px;
+  position: fixed;
+  bottom: 17px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .sidebar-image {
@@ -95,31 +105,33 @@ body {
 }
 
 .sidebar-contents:hover {
-  border-radius: 5px;
-  border: 1px solid #467DF2;
+  border-color: #467DF2;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 15px 40px;
+  background: #F7F7F7;
+  border-bottom: 1px solid #E2E2E2;
 }
 
 .content {
   flex-grow: 1;
   position: relative;
+  background: #EDEEF3;
 }
 
 .menu {
   display: flex;
   position: relative;
+  gap: 60px;
 }
 
 .menu-item-open {
   fill: #4F4E4F;
   border: none;
   background-color: transparent;
-  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -130,6 +142,7 @@ body {
 .menu-items {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .menu-items a {
@@ -138,7 +151,6 @@ body {
   color: #858796;
   font-size: 14px;
   line-height: normal;
-  margin-left: 40px;
   fill: #858796;
 }
 
@@ -187,6 +199,7 @@ body {
 
 .header-tools {
   display: flex;
+  gap: 40px;
 }
 
 .header-search {
@@ -232,8 +245,6 @@ body {
 .header-statistics {
   display: flex;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .header-statistics a {
@@ -270,8 +281,7 @@ body {
 }
 
 .container {
-  padding: 25px 76px 93px 40px;
-  background: #EDEEF3;
+  padding: 25px 75px 93px 40px;
   font-size: 0;
 }
 
@@ -280,6 +290,14 @@ body {
   font-size: 35px;
   font-weight: 800;
   line-height: normal;
+  margin-bottom: 40px;
+}
+
+.dashboard-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .dashboard-video {
@@ -288,8 +306,6 @@ body {
   max-width: 350px;
   position: relative;
   display: inline-block;
-  margin-left: 33px;
-  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -378,23 +394,21 @@ body {
 .technical-support {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 186px;
   transform: rotate(-90deg);
-  flex-shrink: 0;
   border-radius: 10px 10px 0px 0px;
   background: #467DF2;
-  padding: 10px 20px;
-  position: absolute;
-  right: -73px;
+  padding: 10px 0 20px;
+  position: fixed;
+  right: -78px;
   top: 401px;
+  transition: 0.3s all ease;
 }
 
 .technical-support:hover {
   right: -68px;
-  transform: rotate(-90deg);
-  flex-shrink: 0;
-  border-radius: 10px 10px 0px 0px;
   background: #2F54A3;
-  padding: 10px 20px 19px 20px;
 }
 
 .technical-support-button {
