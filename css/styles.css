@@ -354,6 +354,7 @@ body {
   font-size: 18px;
   font-weight: 800;
   line-height: 25px;
+  margin-bottom: 8px;
 }
 
 .video-upload-time {
@@ -361,14 +362,14 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 8px;
+  margin-bottom: 18px;
 }
 
 .dashboard-video-menu ul {
-  margin-top: 18px;
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 45px;
 }
 
 .dashboard-video-menu a {
@@ -381,14 +382,6 @@ body {
 
 .dashboard-video-menu a:hover {
   fill: #467DF2;
-}
-
-.dashboard-video-menu li {
-  margin-left: 45px;
-}
-
-.dashboard-video-menu li:first-child {
-  margin-left: 0;
 }
 
 .technical-support {
